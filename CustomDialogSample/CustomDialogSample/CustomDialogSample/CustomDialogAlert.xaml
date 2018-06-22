@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomDialogSample.CustomDialogAlert"
+             AbsoluteLayout.LayoutBounds="0,0,1,1"
+             AbsoluteLayout.LayoutFlags="All">
+    <ContentView.Content>
+        <AbsoluteLayout>
+            <BoxView
+                x:Name="BoxViewBackground"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Opacity="0.5"
+                BackgroundColor="Red"/>
+            <Frame
+                x:Name="FrameDialogAlert"
+                AbsoluteLayout.LayoutBounds="0.5,0.5,AutoSize,AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="Blue"
+                Padding="0,7,0,7">
+                <StackLayout BackgroundColor="White">
+                    <Label Text="test" TextColor="Black" Margin="20"/>
+                    <Entry x:Name="Entry1" Text="test test" BackgroundColor="White" TextColor="Black" Margin="20,0,20,0" />
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Button x:Name="ButtonCancel" Text="Cancel" Margin="30" Clicked="ButtonCancel_Clicked" />
+                        <Button x:Name="ButtonOk" Text="OK" Margin="30" Clicked="ButtonOk_Clicked" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </AbsoluteLayout>
+    </ContentView.Content>
+</ContentView>

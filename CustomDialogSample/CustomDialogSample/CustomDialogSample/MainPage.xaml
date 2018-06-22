@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomDialogSample"
+             x:Class="CustomDialogSample.MainPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout>
+                <Label x:Name="Label1" Text="" />
+                <Entry x:Name="Entry1" Text="" />
+                <Button x:Name="Button1" Text="tap" />
+            </StackLayout>
+            <local:CustomDialogAlert x:Name="CustomDialogAlert1"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
